@@ -56,5 +56,13 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\table" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\table\MCUsers.sql" />
+    <Build Include="dbo\table\MCRoles.sql" />
+    <Build Include="dbo\table\MCTypesCard.sql" />
+    <Build Include="dbo\table\MCBanks.sql" />
   </ItemGroup>
 </Project>

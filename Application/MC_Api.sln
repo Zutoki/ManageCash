@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC_Api.Models", "MC_Api.Mod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC_Api.Services", "MC_Api.Services\MC_Api.Services.csproj", "{B62526B7-4A09-415C-95C6-0E098C6848E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC_Api.Config", "MC_Api.Config\MC_Api.Config.csproj", "{9B246259-E138-4774-85C3-2D5666688660}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MC_Api.Config", "MC_Api.Config\MC_Api.Config.csproj", "{9B246259-E138-4774-85C3-2D5666688660}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MC_Api.DB", "MC_Api.DB\MC_Api.DB.sqlproj", "{E92E24C6-FC2B-4D7B-85FE-5CCFAF1AEA0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,12 @@ Global
 		{9B246259-E138-4774-85C3-2D5666688660}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B246259-E138-4774-85C3-2D5666688660}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B246259-E138-4774-85C3-2D5666688660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E92E24C6-FC2B-4D7B-85FE-5CCFAF1AEA0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E92E24C6-FC2B-4D7B-85FE-5CCFAF1AEA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E92E24C6-FC2B-4D7B-85FE-5CCFAF1AEA0F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E92E24C6-FC2B-4D7B-85FE-5CCFAF1AEA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E92E24C6-FC2B-4D7B-85FE-5CCFAF1AEA0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E92E24C6-FC2B-4D7B-85FE-5CCFAF1AEA0F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
