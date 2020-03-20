@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="linq2db, Version=2.9.7.0, Culture=neutral, PublicKeyToken=e41013125f9e410a, processorArchitecture=MSIL">
-      <HintPath>..\packages\linq2db.2.9.7\lib\net46\linq2db.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RetriveServices\RSRoles.cs" />
+    <Compile Include="SQL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MC_Api.Config\MC_Api.Config.csproj">
@@ -58,9 +56,6 @@
       <Project>{87ae63e2-4f8c-4f8e-9b88-1cec417d7df9}</Project>
       <Name>MC_Api.Models</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
