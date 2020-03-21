@@ -56,9 +56,7 @@ namespace MC_Api.Services.RetriveServices {
                         }
                     }
                 };
-                return new TrasactionResult() {
-                    Data = DataTableToModel_.GetModel((int)DataTableToModel.Table.MCRoles, Sql_.GetSQL(BaseDataSql_))
-                };
+                return new TrasactionResult() { Data = DataTableToModel_.GetModel((int)DataTableToModel.Table.MCRoles, Sql_.GetSQL(BaseDataSql_)) };
             } catch(Exception _ex) {
                 Msg_ = _ex.Message;
                 if (!_ex.Message.Contains("@MC_Objects")) Msg_ = _ex.Message + " @MC_Objects into class: SQL, BaseDataSQL, DataTableToModel, TrasactionResult";
