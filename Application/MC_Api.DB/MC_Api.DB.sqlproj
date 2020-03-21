@@ -58,11 +58,14 @@
     <Folder Include="Properties" />
     <Folder Include="dbo" />
     <Folder Include="dbo\table" />
+    <Folder Include="dbo\storedprocedure" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\table\MCUsers.sql" />
     <Build Include="dbo\table\MCRoles.sql" />
     <Build Include="dbo\table\MCTypesCard.sql" />
     <Build Include="dbo\table\MCBanks.sql" />
+    <Build Include="dbo\storedprocedure\GetAllAdminModels.sql" />
+    <Build Include="dbo\storedprocedure\GetIdAdminModels.sql" />
   </ItemGroup>
 </Project>
