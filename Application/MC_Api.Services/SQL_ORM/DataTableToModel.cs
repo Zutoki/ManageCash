@@ -17,13 +17,12 @@ namespace MC_Api.Services {
         #region GetModel
         public dynamic GetModel(int _table, dynamic _model){
             switch (_table) {
-                case 0: return GetModel_MCRoles(_model);
+                case 0: return GetModel_MCRoles(_model[0]);
                 case 1: return GetListModel_MCRoles(_model);
                 default: break;
             }
             throw new Exception("Not exist this model into enum 'Table'");
         }
-        
         #endregion
         #region Create models or list to MCRoles
         private List<MCRoles> GetListModel_MCRoles(List<DataRow> _list) {

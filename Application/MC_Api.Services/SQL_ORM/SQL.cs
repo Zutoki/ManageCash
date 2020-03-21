@@ -46,8 +46,7 @@ namespace MC_Api.Services {
                     }
                     SQLClose();
                 }
-                var d = DataTable_.AsEnumerable().ToList();
-                return d;
+                return DataTable_.AsEnumerable().ToList();
             } finally {
                 EndConnection();
             }
@@ -218,7 +217,7 @@ namespace MC_Api.Services {
         public string Key { get; set; }
         public AllType Type { get; set; }
         public int LenType { get; set; }
-        public string Value { get; set; }
+        public dynamic Value { get; set; }
         /// <summary>
         /// 
         /// </summary>
