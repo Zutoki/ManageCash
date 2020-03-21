@@ -51,7 +51,7 @@ namespace MC_Api.Services.RetriveServices {
                         }, 
                         new BaseParamSQL() {
                             Key = "Id",
-                            Value = _id.ToString(),
+                            Value = _id,
                             Type = BaseParamSQL.AllType.Guid
                         }
                     }
