@@ -45,7 +45,8 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RetriveServices\RSRoles.cs" />
-    <Compile Include="SQL.cs" />
+    <Compile Include="SQL_ORM\DataTableToModel.cs" />
+    <Compile Include="SQL_ORM\SQL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MC_Api.Config\MC_Api.Config.csproj">

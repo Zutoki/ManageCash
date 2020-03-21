@@ -17,7 +17,7 @@
     <AssemblyName>MC_Api</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort>44378</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
@@ -256,6 +256,10 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MC_Api.Config\MC_Api.Config.csproj">
+      <Project>{9B246259-E138-4774-85C3-2D5666688660}</Project>
+      <Name>MC_Api.Config</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MC_Api.Models\MC_Api.Models.csproj">
       <Project>{87ae63e2-4f8c-4f8e-9b88-1cec417d7df9}</Project>
       <Name>MC_Api.Models</Name>
@@ -283,7 +287,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>58951</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44378/</IISUrl>
+          <IISUrl>http://localhost/MC_Api</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost/MC_Api</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

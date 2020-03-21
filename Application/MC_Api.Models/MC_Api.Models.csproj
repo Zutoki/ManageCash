@@ -46,7 +46,6 @@
     <Compile Include="ManageCash\MCRoles.cs" />
     <Compile Include="ManageCash\MCUsers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlDataAdapter.cs" />
     <Compile Include="TrasactionResult.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
