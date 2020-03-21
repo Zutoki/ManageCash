@@ -1,6 +1,6 @@
 ﻿namespace MC_Api {
     public class Config : FN {
-        private static readonly string MC_Svr = "hGeoSBs79CcZMbw7uY/e3LEp92iBUicRPJ5ykOwxuzQ=";
+        private static readonly string MC_Svr = "hGeoSBs79Cc57GUH5mFJtj4ZUgu2hj70";
         private static readonly string MC_Db = "KaSAvnoYT/REB9FfT5uL+Q==";
         private static readonly string MC_Usr = "+8D/e57jBSKC3IHrcy0Vsw==";
         private static readonly string MC_Pwd = "E3yBMEFI4sx6exWvILUMYA==";
