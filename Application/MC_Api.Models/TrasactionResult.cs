@@ -12,7 +12,4 @@ namespace MC_Api.Models {
         public bool Pass { get; set; }
         public bool Fail { get; set; }
     }
-    public class ModelById {
-        public Guid Id {get; set;}
-    }
 }
