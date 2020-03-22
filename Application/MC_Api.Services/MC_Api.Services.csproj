@@ -45,8 +45,10 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RetriveServices\RSRoles.cs" />
+    <Compile Include="ServicesBase.cs" />
     <Compile Include="SQL_ORM\DataTableToModel.cs" />
     <Compile Include="SQL_ORM\SQL.cs" />
+    <Compile Include="WriteServices\WSRoles.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MC_Api.Config\MC_Api.Config.csproj">
@@ -58,5 +60,6 @@
       <Name>MC_Api.Models</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

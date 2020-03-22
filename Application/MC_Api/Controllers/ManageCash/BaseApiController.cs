@@ -19,18 +19,19 @@ namespace MC_Api.ManageCash {
         /// <returns></returns>
         protected TrasactionResult ErrorResult(string _aAction, string _aController, string _error) {
             try {
-                DictionaryofErrors(_error);
+                //DictionaryofErrors(_error);
                 return new TrasactionResult() {
                     Code = Code,
                     Data = new List<string>(),
                     Message = "Error in method " + _aAction + " into " + _aController + ", for more details you can see field 'MessageDetails'",
-                    MessageDetails = MessageDetails ?? new List<string>(),
+                    MessageDetails = new List<string>() { _error },
                     Pass = false,
                     Fail = true
                 };
             } finally {
                 Code = short.MinValue;
                 MessageDetails = null;
+                Msg = null;
             }
         }
         #endregion
@@ -46,6 +47,7 @@ namespace MC_Api.ManageCash {
             } finally {
                 Code = short.MinValue;
                 MessageDetails = null;
+                Msg = null;
             }
         }
         #endregion
@@ -67,15 +69,9 @@ namespace MC_Api.ManageCash {
         #region DictionaryofErrors
         private bool DictionaryofErrors(string _error) {
             MessageDetails = new List<string>();
-            switch (_error.Split('@')[0]) {
-                case "Object reference not set to an instance of an object. ":
-                    Code = 409;
-                    MessageDetails.Add(_error);
-                    return true;
-                default: break;
-            }
-            MessageDetails = null;
-            return false;
+            Code = 409;
+            MessageDetails.Add(_error);
+            return true;
         }
         #endregion
     }

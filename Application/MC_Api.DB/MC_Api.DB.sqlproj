@@ -67,5 +67,7 @@
     <Build Include="dbo\table\MCBanks.sql" />
     <Build Include="dbo\storedprocedure\GetAllAdminModels.sql" />
     <Build Include="dbo\storedprocedure\GetIdAdminModels.sql" />
+    <Build Include="dbo\storedprocedure\UpdRole.sql" />
+    <Build Include="dbo\storedprocedure\AddRole.sql" />
   </ItemGroup>
 </Project>

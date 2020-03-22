@@ -2,7 +2,6 @@
 
 namespace MC_Api.Models {
     public class MCUsers {
-        
         public Guid Id { get; set; }
         public Guid MCRolesId { get; set; }
         public string UserName { get; set; }
