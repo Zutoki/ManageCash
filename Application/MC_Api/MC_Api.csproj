@@ -162,7 +162,6 @@
     <Compile Include="Controllers\ManageCash\BaseApiController.cs" />
     <Compile Include="Controllers\ManageCash\RolesController.cs" />
     <Compile Include="Controllers\ManageCash\UsersController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
