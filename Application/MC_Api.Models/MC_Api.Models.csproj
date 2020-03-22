@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ManageCash\MCRoles.cs" />
     <Compile Include="ManageCash\MCUsers.cs" />
+    <Compile Include="ManageCash\ModelsById.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrasactionResult.cs" />
   </ItemGroup>

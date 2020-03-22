@@ -17,7 +17,7 @@ namespace MC_Api.Services {
         }
         #endregion
         #region GetModel
-        public dynamic GetModel(DataTableToModel.Table _table, dynamic _model){
+        public dynamic GetModel(Table _table, dynamic _model){
             switch (_table.ToString()) {
                 case "ModelsById": return GetModel_ModelsById(_model[0]);
                 case "MCRoles": return GetModel_MCRoles(_model[0]);
