@@ -2,20 +2,20 @@
 using System;
 using System.Collections.Generic;
 
-namespace MC_Api.Services.RetriveServices {
-    public class RSRoles : ServicesBase {
-        #region GetAllRoles
-        public TrasactionResult GetAllRoles() {
+namespace MC_Api.Services.WriteServices {
+    public class WSRoles : ServicesBase {
+        #region AddRole
+        public TrasactionResult AddRole(MCRoles _role) {
             try {
                 InitServices();
                 BaseDataSql_ = new BaseDataSQL() {
-                    Cmd = "GetAllAdminModels",
+                    Cmd = "AddRole",
                     CmdType = BaseDataSQL.AllCmdType.SP,
                     Param = new List<BaseParamSQL>(){
-                        GetBaseParamSQL("Type", 0, BaseParamSQL.AllType.Int)
+                        GetBaseParamSQL("Name", _role.Name, BaseParamSQL.AllType.VarChar)
                     }
                 };
-                return new TrasactionResult() { Data = DataTableToModel_.GetModel(DataTableToModel.Table.ListMCRoles, Sql_.GetSQL(BaseDataSql_)) };
+                return new TrasactionResult() { Data = DataTableToModel_.GetModel(DataTableToModel.Table.ModelsById, Sql_.GetSQL(BaseDataSql_)) };
             } catch(Exception _ex) {
                 Msg_ = _ex.Message;
                 if (!_ex.Message.Contains("@MC_Objects")) Msg_ = _ex.Message + " @MC_Objects into class: SQL, BaseDataSQL, DataTableToModel, TrasactionResult";
@@ -28,19 +28,19 @@ namespace MC_Api.Services.RetriveServices {
             }
         }
         #endregion
-        #region GetRoleByID
-        public TrasactionResult GetRoleByID(Guid _id) {
+        #region UpdRole
+        public TrasactionResult UpdRole(MCRoles _role) {
             try {
                 InitServices();
                 BaseDataSql_ = new BaseDataSQL() {
-                    Cmd = "GetIdAdminModels",
+                    Cmd = "UpdRole",
                     CmdType = BaseDataSQL.AllCmdType.SP,
-                    Param = new List<BaseParamSQL>() {
-                        GetBaseParamSQL("Type", 0, BaseParamSQL.AllType.Int),
-                        GetBaseParamSQL("Id", _id, BaseParamSQL.AllType.Guid)
+                    Param = new List<BaseParamSQL>(){
+                        GetBaseParamSQL("Id", _role.Id, BaseParamSQL.AllType.Guid),
+                        GetBaseParamSQL("Name", _role.Name, BaseParamSQL.AllType.VarChar)
                     }
                 };
-                return new TrasactionResult() { Data = DataTableToModel_.GetModel(DataTableToModel.Table.MCRoles, Sql_.GetSQL(BaseDataSql_)) };
+                return new TrasactionResult() { Data = DataTableToModel_.GetModel(DataTableToModel.Table.ModelsById, Sql_.GetSQL(BaseDataSql_)) };
             } catch(Exception _ex) {
                 Msg_ = _ex.Message;
                 if (!_ex.Message.Contains("@MC_Objects")) Msg_ = _ex.Message + " @MC_Objects into class: SQL, BaseDataSQL, DataTableToModel, TrasactionResult";
